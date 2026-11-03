@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- SEO: replace https://www.ganeshpanda.com with your real domain; replace INSTALL_URL with the real install link -->
+<!-- SEO: replace https://www.ganeshpanda.com with your real domain; Install links point at the PandaPDF 0.17.0 GitHub release asset -->
 <title>PandaPDF — AI-Powered PDF Tool by Ganesh Panda | Free Install</title>
 <meta name="description" content="PandaPDF is an intelligent PDF tool by Ganesh Panda. Merge, split, convert, compress and edit PDFs, and let AI summarise and answer questions about your documents.">
 <meta name="author" content="Ganesh Panda">
@@ -32,10 +32,11 @@
       "name": "PandaPDF",
       "url": "https://www.ganeshpanda.com/pandapdf",
       "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Windows, macOS, Linux, Web",
+      "operatingSystem": "Windows 10, Windows 11",
       "description": "AI-powered PDF tool to merge, split, convert, compress and edit PDFs, with AI summaries and document Q&A.",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "downloadUrl": "INSTALL_URL",
+      "downloadUrl": "https://github.com/hookrecovery-svg/GaneshPanda-site/releases/download/PandaPDFversion1/PandaPDF-0.17.0-Setup-windows-x64.exe",
+      "softwareVersion": "0.17.0",
       "author": { "@type": "Person", "@id": "https://www.ganeshpanda.com/#person", "name": "Ganesh Panda", "url": "https://www.ganeshpanda.com/" }
     },
     {
@@ -240,6 +241,13 @@
 
   footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; text-align: center; }
   footer a { text-decoration: none; color: var(--accent); }
+  .dl-thanks { display: none; margin-top: 18px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--accent-soft); color: var(--text); text-align: left; font-size: 14px; line-height: 1.55; }
+  .dl-thanks.show { display: block; }
+  .dl-thanks strong { display: block; font-size: 15px; margin-bottom: 6px; }
+  .dl-thanks ol { margin: 6px 0 8px; padding-left: 20px; }
+  .dl-thanks a { color: var(--accent); }
+  .install .dl-thanks { max-width: 460px; margin-left: auto; margin-right: auto; }
+  .btn.dl-btn.started { opacity: .85; }
 </style>
 </head>
 <body>
@@ -267,13 +275,22 @@
       <h1>Panda<em>PDF</em></h1>
       <p class="lead">The intelligent PDF tool. Merge, split, convert, compress and edit your PDFs in seconds, then let AI summarise them and answer your questions about what's inside.</p>
       <div class="cta">
-        <a href="INSTALL_URL" class="btn primary" id="installBtn">
+        <a href="https://github.com/hookrecovery-svg/GaneshPanda-site/releases/download/PandaPDFversion1/PandaPDF-0.17.0-Setup-windows-x64.exe" class="btn primary dl-btn" id="installBtn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
           Install PandaPDF
         </a>
         <a href="#features" class="btn">See features</a>
       </div>
-      <p class="note">Free forever, no license fee. Your files stay on your device.</p>
+      <p class="note">Free download for Windows (64-bit), v0.17.0. No license fee. Your files stay on your device.</p>
+      <div class="dl-thanks" role="status" aria-live="polite">
+        <strong>Thanks! Your download is starting.</strong>
+        <ol>
+          <li>Open <b>PandaPDF-0.17.0-Setup-windows-x64.exe</b> from your Downloads folder.</li>
+          <li>If Windows shows "Windows protected your PC", click <b>More info</b>, then <b>Run anyway</b>.</li>
+          <li>Follow the installer, then launch PandaPDF from the Start menu.</li>
+        </ol>
+        Download didn't start? <a href="https://github.com/hookrecovery-svg/GaneshPanda-site/releases/download/PandaPDFversion1/PandaPDF-0.17.0-Setup-windows-x64.exe">Click here to try again</a>.
+      </div>
     </div>
 
     <div class="mock" aria-hidden="true">
@@ -346,11 +363,20 @@
     <div class="install">
       <h2>Get PandaPDF today.</h2>
       <p>Free, fast and AI-powered. No license fee, ever.</p>
-      <a href="INSTALL_URL" class="btn primary">
+      <a href="https://github.com/hookrecovery-svg/GaneshPanda-site/releases/download/PandaPDFversion1/PandaPDF-0.17.0-Setup-windows-x64.exe" class="btn primary dl-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
         Install PandaPDF
       </a>
-      <p class="note">Works on Windows, macOS, Linux and the web. Enjoying it? <a href="DONATE_URL">Donate to keep the work going</a>.</p>
+      <p class="note">Version 0.17.0 for Windows 10/11 (64-bit), 46.7 MB. Enjoying it? <a href="DONATE_URL">Donate to keep the work going</a>.</p>
+      <div class="dl-thanks" role="status" aria-live="polite">
+        <strong>Thanks! Your download is starting.</strong>
+        <ol>
+          <li>Open <b>PandaPDF-0.17.0-Setup-windows-x64.exe</b> from your Downloads folder.</li>
+          <li>If Windows shows "Windows protected your PC", click <b>More info</b>, then <b>Run anyway</b>.</li>
+          <li>Follow the installer, then launch PandaPDF from the Start menu.</li>
+        </ol>
+        Download didn't start? <a href="https://github.com/hookrecovery-svg/GaneshPanda-site/releases/download/PandaPDFversion1/PandaPDF-0.17.0-Setup-windows-x64.exe">Click here to try again</a>.
+      </div>
     </div>
   </section>
 </main>
@@ -368,6 +394,18 @@
       : matchMedia('(prefers-color-scheme: dark)').matches;
     root.dataset.theme = dark ? 'light' : 'dark';
     try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+
+  document.querySelectorAll('.dl-btn').forEach((btn) => {
+    const label = btn.lastChild;
+    btn.addEventListener('click', () => {
+      const box = btn.closest('.cta, .install').parentElement.querySelector('.dl-thanks') || document.querySelector('.dl-thanks');
+      document.querySelectorAll('.dl-thanks').forEach((b) => b.classList.remove('show'));
+      box.classList.add('show');
+      btn.classList.add('started');
+      label.textContent = ' Downloading…';
+      setTimeout(() => { label.textContent = ' Install PandaPDF'; btn.classList.remove('started'); }, 4000);
+    });
   });
 </script>
 </body>
