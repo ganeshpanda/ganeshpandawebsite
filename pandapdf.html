@@ -41,7 +41,7 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Is PandaPDF free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. PandaPDF is free to install and use." } },
+        { "@type": "Question", "name": "Is PandaPDF free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. PandaPDF is 100% free, with no license fee or subscription required. Donations are welcome to help keep the work going." } },
         { "@type": "Question", "name": "Are my files uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "Core PDF tools run on your device, so your documents stay private." } },
         { "@type": "Question", "name": "What can the AI do?", "acceptedAnswer": { "@type": "Answer", "text": "PandaPDF's AI can summarise long documents, answer questions about their content and pull out key information." } }
       ]
@@ -204,6 +204,24 @@
   .step h3 { font-size: 17px; margin-bottom: 4px; }
   .step p { color: var(--muted); font-size: 15px; }
 
+  .free { display: grid; gap: 24px; align-items: center; }
+  @media (min-width: 820px) { .free { grid-template-columns: 1.3fr 1fr; gap: 48px; } }
+  .free h2 { margin-bottom: 16px; }
+  .free > div > p { color: var(--muted); font-size: 17px; max-width: 520px; }
+  .ticks { list-style: none; margin-top: 20px; display: grid; gap: 10px; }
+  .ticks li { display: flex; gap: 10px; align-items: center; font-weight: 500; }
+  .ticks li::before {
+    content: "✓"; width: 24px; height: 24px; border-radius: 50%; flex: none;
+    background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-size: 13px; font-weight: 700;
+  }
+  .donate {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 28px; text-align: center;
+  }
+  .donate .heart { font-size: 34px; color: #e03131; line-height: 1; }
+  .donate h3 { font: 700 22px "Space Grotesk", sans-serif; margin: 10px 0 8px; }
+  .donate p { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+  .donate-btn { background: #e03131; color: #fff; border-color: #e03131; }
+
   .faq { display: grid; gap: 10px; max-width: 760px; }
   details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
   summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
@@ -232,6 +250,7 @@
     <div class="links">
       <a href="#features" class="hide-sm">Features</a>
       <a href="#how" class="hide-sm">How it works</a>
+      <a href="#free" class="hide-sm">Pricing</a>
       <a href="#faq" class="hide-sm">FAQ</a>
       <a href="#install" class="install-sm">Install</a>
       <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
@@ -244,7 +263,7 @@
 
   <div class="hero">
     <div>
-      <span class="badge">Free · AI-powered</span>
+      <span class="badge">100% free · No license fee · AI-powered</span>
       <h1>Panda<em>PDF</em></h1>
       <p class="lead">The intelligent PDF tool. Merge, split, convert, compress and edit your PDFs in seconds, then let AI summarise them and answer your questions about what's inside.</p>
       <div class="cta">
@@ -254,7 +273,7 @@
         </a>
         <a href="#features" class="btn">See features</a>
       </div>
-      <p class="note">Free to use. Your files stay on your device.</p>
+      <p class="note">Free forever, no license fee. Your files stay on your device.</p>
     </div>
 
     <div class="mock" aria-hidden="true">
@@ -291,11 +310,32 @@
     </div>
   </section>
 
+  <section id="free">
+    <div class="free">
+      <div>
+        <div class="eyebrow">Free forever</div>
+        <h2>100% free. No license fee.</h2>
+        <p>PandaPDF is completely free for personal and business use. No license fee, no subscription, no hidden charges, no watermarks.</p>
+        <ul class="ticks">
+          <li>No license or subscription required</li>
+          <li>Free for personal and commercial use</li>
+          <li>No sign-up, no watermarks</li>
+        </ul>
+      </div>
+      <div class="donate">
+        <div class="heart" aria-hidden="true">♥</div>
+        <h3>Love PandaPDF?</h3>
+        <p>If PandaPDF saves you time, consider a small donation. It helps keep the work going and new features coming.</p>
+        <a href="DONATE_URL" class="btn donate-btn">♥ Donate</a>
+      </div>
+    </div>
+  </section>
+
   <section id="faq">
     <div class="eyebrow">FAQ</div>
     <h2>Questions, answered.</h2>
     <div class="faq">
-      <details><summary>Is PandaPDF free?</summary><p>Yes. PandaPDF is free to install and use.</p></details>
+      <details><summary>Is PandaPDF free?</summary><p>Yes. PandaPDF is 100% free, with no license fee or subscription required. If you find it useful, you can <a href="DONATE_URL">donate</a> to help keep the work going.</p></details>
       <details><summary>Are my files uploaded anywhere?</summary><p>Core PDF tools run on your device, so your documents stay private.</p></details>
       <details><summary>What can the AI do?</summary><p>PandaPDF's AI can summarise long documents, answer questions about their content and pull out key information.</p></details>
       <details><summary>Who built PandaPDF?</summary><p>PandaPDF is built by <a href="/">Ganesh Panda</a>, a builder and leader creating AI-first products.</p></details>
@@ -305,12 +345,12 @@
   <section id="install" style="border-top:0">
     <div class="install">
       <h2>Get PandaPDF today.</h2>
-      <p>Free, fast and AI-powered. Your PDFs will never be the same.</p>
+      <p>Free, fast and AI-powered. No license fee, ever.</p>
       <a href="INSTALL_URL" class="btn primary">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
         Install PandaPDF
       </a>
-      <p class="note">Works on Windows, macOS, Linux and the web.</p>
+      <p class="note">Works on Windows, macOS, Linux and the web. Enjoying it? <a href="DONATE_URL">Donate to keep the work going</a>.</p>
     </div>
   </section>
 </main>
