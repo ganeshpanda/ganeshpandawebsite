@@ -1,0 +1,9 @@
+// Cloudflare Workers Builds config for this mirror repo: serve public/ as a static site.
+{
+  "name": "ganeshpandawebsite",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash"
+  }
+}
