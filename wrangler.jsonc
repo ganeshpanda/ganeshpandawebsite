@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ganeshpanda-site",
+  "compatibility_date": "2026-11-01",
+  // Serve the static site in ./public. No Worker script is needed.
+  // /pandapdf is served from pandapdf.html automatically (html_handling defaults to auto-trailing-slash).
+  "assets": {
+    "directory": "./public"
+  }
+}
