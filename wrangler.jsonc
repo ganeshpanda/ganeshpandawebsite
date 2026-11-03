@@ -1,0 +1,11 @@
+// Cloudflare Worker config: serve this folder as a plain static site.
+// No "main" script, so "/" serves index.html and "/pandapdf" serves pandapdf.html
+// instead of falling through to a "Hello world" Worker script.
+{
+  "name": "ganeshpanda-site",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./",
+    "html_handling": "auto-trailing-slash"
+  }
+}
